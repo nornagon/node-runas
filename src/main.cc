@@ -67,7 +67,7 @@ void Runas(const Nan::FunctionCallbackInfo<Value>& info) {
   }
 }
 
-void Init(Handle<Object> exports) {
+void Init(Local<Object> exports) {
   Nan::SetMethod(exports, "runas", Runas);
 }
 
